@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Improve</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculate_e1rm">Calculate E1RM</string>
+    <string name="calculate_ww">Calculate Working Weight</string>
+
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="choose_rpe">Choose RPE</string>
+    <string name="choose_reps">Choose Reps</string>
+    <string-array
+        name="rpe_array">
+        <item>5</item>
+        <item>5.5</item>
+        <item>6</item>
+        <item>6.5</item>
+        <item>7</item>
+        <item>7.5</item>
+        <item>8</item>
+        <item>8.5</item>
+        <item>9</item>
+        <item>9.5</item>
+        <item>10</item>
+    </string-array>
+    <string-array
+        name="reps_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string name="calculated_e1rm">E1RM: %1$s kg</string>
+    <string name="calculated_weight">Working Weight: %1$s kg</string>
+    <string name="percent_1rm">%1$s of E1RM</string>
+
+</resources>

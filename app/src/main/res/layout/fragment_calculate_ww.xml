@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CalculateWWFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/rep_max_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/max_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One rep Max"/>
+            <EditText
+                android:id="@+id/max_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/reps_rpe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rep_max_layout">
+            <LinearLayout
+                android:id="@+id/rpe_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/rpe_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose rpe"/>
+                <Button
+                    android:id="@+id/rpe_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/reps_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/reps_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of reps"/>
+                <Button
+                    android:id="@+id/reps_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/calculate_ww_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reps_rpe_layout"
+            android:text="Calculate"/>
+        <TextView
+            android:id="@+id/ww_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toBottomOf="@id/calculate_ww_btn"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="100 Kg"/>
+        <TextView
+            android:id="@+id/percent_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ww_textView"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="81% of E1RM"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

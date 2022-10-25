@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.improve.StartFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_calculateE1RMFragment"
+            app:destination="@id/calculateE1RMFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_calculateWWFragment"
+            app:destination="@id/calculateWWFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculateE1RMFragment"
+        android:name="com.example.improve.CalculateE1RMFragment"
+        android:label="@string/calculate_e1rm"
+        tools:layout="@layout/fragment_calculate_e1rm" />
+    <fragment
+        android:id="@+id/calculateWWFragment"
+        android:name="com.example.improve.CalculateWWFragment"
+        android:label="@string/calculate_ww"
+        tools:layout="@layout/fragment_calculate_ww" />
+</navigation>
